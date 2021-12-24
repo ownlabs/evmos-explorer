@@ -1,0 +1,23 @@
+FROM node:14-alpine as build
+
+RUN apk --no-cache add --update git python3 make g++
+
+WORKDIR /usr/app/
+
+RUN yarn set version 2 --only-if-needed
+
+COPY .yarnrc.yml .yarnrc.yml
+COPY yarn.lock yarn.lock
+COPY .yarn/ .yarn/
+COPY backend/ ./
+COPY types/ ../types/
+
+RUN yarn install
+
+RUN npm run build
+
+EXPOSE 5000
+
+ENV NODE_ENV=production
+
+CMD ["node", "--unhandled-rejections=strict", "-r", "source-map-support/register", "build/index.js"]

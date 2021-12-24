@@ -1,0 +1,34 @@
+export const noBlocksYet = "no blocks yet";
+export const blockNumber = "block no.";
+export const blockHash = "block hash";
+export const parentHash = "parent hash";
+export const difficulty = "difficulty";
+export const gasLimit = "gas limit";
+export const gasUsed = "gas used";
+export const miner = "miner";
+export const nonce = "nonce";
+export const extraData = "extra data";
+export const logsBloom = "logs bloom";
+export const stateRoot = "state root";
+export const totalDifficulty = "total difficulty";
+export const transactionsRoot = "transactions root";
+export const latestBlock = "latest block";
+export const blockTime = "block time";
+export const blockHeight = "block height";
+export const blockCount = "block count";
+export const avgBlockTime = "average block time";
+export const noTransactionsInBlock = "no transactions in block";
+export const noMetricsYet = "no metrics yet";
+export const block = "block";
+
+// Consensus labels
+export const lastCommitHash = "last commit hash";
+export const dataHash = "data hash";
+export const validatorsHash = "validators hash";
+export const nextValidatorsHash = "next validators hash";
+export const consensusHash = "consensus hash";
+export const appHash = "app hash";
+export const lastResultsHash = "last results hash";
+export const evidenceHash = "evidence hash";
+export const proposerAddress = "proposer address";
+export const signatures = "signatures";

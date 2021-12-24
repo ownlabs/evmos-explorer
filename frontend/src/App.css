@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  overscroll-behavior: none;
+  color: #FFFFFF;
+  background-color: #242526;
+}
+
+/* Gotta target this few in particular, thanks css*/
+input,
+button,
+textarea,
+select {
+  font-family: "Inter", sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}

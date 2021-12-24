@@ -1,0 +1,62 @@
+{
+  "name": "@evmos-blockexplorer/frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@evmos-blockexplorer/types": "portal:../types",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.9",
+    "@types/styled-components": "^5.1.14",
+    "axios": "^0.24.0",
+    "date-fns": "^2.27.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.3",
+    "react-query": "^3.34.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "socket.io-client": "^4.4.0",
+    "styled-components": "^5.3.1",
+    "typescript": "4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test-base": "react-scripts test --watchAll=false --forceExit",
+    "test-staged": "yarn run test-base --bail --findRelatedTests",
+    "test": "yarn run test-base",
+    "coverage": "yarn run test --coverage",
+    "eject": "react-scripts eject",
+    "lint-base": "eslint --fix",
+    "lint-staged": "yarn run lint-base",
+    "lint": "yarn run lint-base --ext .ts,.tsx,.js,.jsx .",
+    "prepublish": "yarn run test",
+    "prepack": "yarn run lint && yarn run build",
+    "precommit": "lint-staged"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

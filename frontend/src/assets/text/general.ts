@@ -1,0 +1,10 @@
+export const dashboard = "dashboard";
+export const blocks = "blocks";
+export const date = "date";
+export const evmosBlockExplorer = "Evmos Explorer";
+export const back = "back";
+export const from = "from";
+export const to = "to";
+export const search = "search";
+export const noSearchResults = "no search results";
+export const ellipsis = "...";

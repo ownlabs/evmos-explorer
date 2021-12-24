@@ -1,0 +1,42 @@
+{
+  "name": "evmos-blockexplorer",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Evmos BlockExplorer First Prototype",
+  "scripts": {
+    "build": "yarn workspaces foreach --parallel run build",
+    "test": "yarn workspaces foreach --parallel run test",
+    "coverage": "yarn workspaces foreach --parallel run coverage",
+    "format": "prettier --write --loglevel warn '**/*.*'",
+    "lint": "yarn workspaces foreach --parallel run lint",
+    "refreshVSToken": "vsts-npm-auth -config .npmrc"
+  },
+  "workspaces": [
+    "frontend/",
+    "backend/",
+    "types/"
+  ],
+  "devDependencies": {
+    "@kryha/prettier-config": "^1.0.0",
+    "prettier": "^2.5.0",
+    "typescript": "^4.5.2"
+  },
+  "browserslist": [
+    "last 2 chrome version",
+    "last 2 firefox version",
+    "last 2 safari version",
+    "last 2 edge version"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://Kryha-io@dev.azure.com/Kryha-io/Evmos%20Web3/_git/evmos-blockexplorer"
+  },
+  "keywords": [
+    "Blockchain",
+    "React",
+    "Block explorer",
+    "Evmos"
+  ],
+  "author": "kryha",
+  "license": "ISC"
+}
